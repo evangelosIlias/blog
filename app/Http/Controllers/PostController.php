@@ -110,5 +110,4 @@ class PostController extends Controller
               
         return view('posts.search_results', ['posts' => $posts]);
     }
-
 }
