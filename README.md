@@ -5,5 +5,7 @@ The blog test project is a blog where users can register log in, create posts, e
 
 For the blog project, the Laravel framework was used
 
-For macOS users can use the vallet to get access to the project ```http://blog.test/```
+For macOS users can use the vallet to get access to the project ```http://blog.test```
+
+- ``` php artisan migrate ```
 
