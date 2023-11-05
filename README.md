@@ -12,7 +12,7 @@ Run the following commands
 
 - ``` php artisan migrate ``` to migrate the database
 - ``` php artisan migrate --seed ``` to migrate the seeders
-- ``` php artisan test ``` to run the test
+- ``` php artisan test ``` to run the tests
 
 For that project ``` composer ``` and ``` breeze ```  installed 
 
