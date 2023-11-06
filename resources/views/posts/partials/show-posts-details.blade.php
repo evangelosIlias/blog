@@ -22,6 +22,7 @@
             </div>
         </div>  
     </div>
+ 
 <div class="mt-4">
     <h4 class="title" style="font-size: 1em; font-weight: bold;">({{ $post->comments->count() }}) Comment</h4>
     <div class="card" style="margin-top: 5px; margin-bottom: 150px;">

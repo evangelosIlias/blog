@@ -39,7 +39,7 @@ class PostController extends Controller
         $request->user()->posts()->create([
             'title' => $title,
             'content' => $content,
-            'created_at' => now()->subYear(),
+            'created_at' => now()
         ]);
 
         return redirect()->route('home')->with('success', 'Your post has been created successfully!');

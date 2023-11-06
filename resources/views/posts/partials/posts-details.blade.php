@@ -1,5 +1,5 @@
-<div class="col-md-5 mt-6">
-    <div class="card d-flex flex-column" style="min-height: 200px;">
+<div class="col-md-5" style="padding-top: 30px;">
+    <div class="card d-flex flex-column" style="min-height: 100px;">
         <div class="card-body">
             <h6 class="card-title" style="font-size: 1.25em; font-weight: bold;">{{ $post->title }}</h6>
             <p class="card-text">{{ substr($post->content, 0, 148) . '...' }}</p>
