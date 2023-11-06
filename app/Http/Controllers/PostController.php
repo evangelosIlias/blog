@@ -39,7 +39,7 @@ class PostController extends Controller
         $request->user()->posts()->create([
             'title' => $title,
             'content' => $content,
-            'created_at' => now()->subYear()
+            'created_at' => now()->subYear(),
         ]);
 
         return redirect()->route('home')->with('success', 'Your post has been created successfully!');
@@ -58,7 +58,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        return view('posts.edit', $post);
+        return view('posts.edit', ['post' => $post]);
     }
 
     /**

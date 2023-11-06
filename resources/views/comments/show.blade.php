@@ -8,19 +8,18 @@
             </div>
         </div>
         <div style="display: flex; align-items: center; margin-top: 30px; font-size: 20px; justify-content: space-between;">
-            
             @if (Auth::check() && Auth::id() == $comment->user_id)
                 <a href="{{ route('comments.edit', $comment) }}">
-                    <i class="fa-solid fa-pen-to-square" style="margin-right: 5px; color: #7149ab;" title="Edit Post"></i>
+                    <i class="fa-solid fa-pen-to-square" style="margin-right: 5px; color: #7149ab;" title="Edit Comment"></i>
                 </a>
                 <form method="post" action="{{ route('comments.delete', $comment) }}">
                     @method('delete')
                     @csrf
                     <button type="submit">
-                        <i class="fa-solid fa-trash" style="color: #c56385;" title="Delete Post"></i>
+                        <i class="fa-solid fa-trash" style="color: #c56385;" title="Delete Comment"></i>
                     </button>
-                @endif
-            </form>
+                </form>
+            @endif
         </div>
     </div>
 </div>

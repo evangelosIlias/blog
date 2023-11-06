@@ -24,11 +24,11 @@ class CommentFactory extends Factory
     public function definition()
     {
         if (app()->runningUnitTests()) {
-            $user = USer::factory()->create();
+            $user = User::factory()->create();
             $post = Post::factory()->create();
         } else {
-            $post = Post::inRandomOrder()->factory()->create()->first();
-            $user = User::inRandomOrder()->factory()->create()->first();
+            $post = Post::inRandomOrder()->first();
+            $user = User::inRandomOrder()->first();
         }
 
         return [

@@ -11,9 +11,13 @@
                     <a href="{{ route('posts.edit', $post) }}">
                         <i class="fa-solid fa-pen-to-square" style="font-size: 24px; margin-right: 5px; color: #7149ab;" title="Edit Post"></i>
                     </a>
-                    <a href="{{ route('posts.delete', $post) }}">
-                        <i class="fa-solid fa-trash" style="font-size: 24px; color: #c56385;" title="Delete Post"></i>
-                    </a>
+                    <form method="post" action="{{ route('posts.delete', $post) }}">
+                        @method('delete')
+                        @csrf
+                        <button type="submit">
+                            <i class="fa-solid fa-trash" style="color: #c56385;" title="Delete Post"></i>
+                        </button>
+                    </form>
                 @endif
             </div>
         </div>  

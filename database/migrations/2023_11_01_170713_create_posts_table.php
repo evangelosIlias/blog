@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('title')->index();
             $table->text('content')->nullable();
             $table->timestamps();
+            $table->softDeletes();
 
             // $table->foreign('user_id')
             //     ->references('id')
