@@ -2,7 +2,6 @@
 
 namespace App\Notifications;
 
-use App\Models\Post;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -15,7 +14,7 @@ class OldPostDeletedNotification extends Notification implements ShouldQueue
     /**
      * Create a new notification instance.
      */
-    public function __construct(private Post $postCount)
+    public function __construct(private int $postCount)
     {
     }
 
