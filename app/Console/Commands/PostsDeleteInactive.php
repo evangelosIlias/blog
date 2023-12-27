@@ -26,7 +26,8 @@ class PostsDeleteInactive extends Command
      * Execute the console command.
      */
     public function handle()
-    {
+    {   
+        // Please make sure you have solve the N + 1 problem
         User::whereHas('posts', fn($query) => $query->whereDoesntHave('comments')->where('created_at', '<', now()->subYear()))
             ->get()
             ->each(fn(User $user) => $user->notify(new OldPostDeletedNotification($this->deleteUserPosts($user))));

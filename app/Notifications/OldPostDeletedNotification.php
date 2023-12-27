@@ -16,6 +16,7 @@ class OldPostDeletedNotification extends Notification implements ShouldQueue
      */
     public function __construct(private int $postCount)
     {
+        
     }
 
     /**

@@ -18,10 +18,8 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 |
 */
 
-
 Route::get('/', [PostController::class, 'index'])->name('home');
 Route::get('/posts/search' , [PostController::class, 'search'])->name('posts.search');
-
 
 // Post routes
 Route::middleware('auth')->group(function () {
