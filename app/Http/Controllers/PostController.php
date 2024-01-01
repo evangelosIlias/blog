@@ -101,7 +101,8 @@ class PostController extends Controller
     {
         $searchQuery = $request->searchQuery;
 
-        $posts = Post::where('title', 'LIKE', "%$searchQuery%")
+        $posts = Post::with('comments')
+            ->where('title', 'LIKE', "%$searchQuery%")
             ->orWhere('content', 'LIKE', "%$searchQuery%")
             ->orWhereHas('comments', function ($query) use ($searchQuery) {
                 $query->where('comment', 'LIKE', "%$searchQuery%");
