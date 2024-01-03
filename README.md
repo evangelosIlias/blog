@@ -7,6 +7,9 @@ Prerequisites
 ## Before you get started, make sure you have the following installed:
     
   - Valet (for macOS users)
+  - For macOS users with Valet:
+    
+        http://blog.test
 
 ## Installation
 
@@ -36,7 +39,6 @@ Run unit tests:
 
     php artisan test
 
-- For macOS users with Valet: http://blog.test.
 
 Example Images
 
