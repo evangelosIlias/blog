@@ -19,7 +19,7 @@ Navigate to the project directory
 
   - cd blog-test-project
 
-Run database migrations:
+Run database migrations
 
     php artisan migrate
 
