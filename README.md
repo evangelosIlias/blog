@@ -5,54 +5,28 @@ The Blog Test Project is a Laravel-based web application designed for users to m
 Prerequisites
 
 Before you get started, make sure you have the following installed:
-
-    Composer
-    Laravel
+    
     Valet (for macOS users)
 
 Installation
 
-    Clone the repository:
+    git clone https://github.com/your-username/blog-test-project.git
 
-    bash
+Navigate to the project directory:
 
-git clone https://github.com/your-username/blog-test-project.git
-
-- Navigate to the project directory:
-
-bash
-
-- cd blog-test-project
-
-Install dependencies with Composer:
-
-bash
-
-composer install
+    cd blog-test-project
 
 Copy the environment file and update the configuration:
 
-bash
-
-cp .env.example .env
+    cp .env.example .env
 
 Update the .env file with your database credentials.
 
-Generate application key:
-
-bash
-
-php artisan key:generate
-
 Run database migrations:
 
-bash
-
-php artisan migrate
+    php artisan migrate
 
 Seed the database with sample data:
-
-bash
 
     php artisan migrate --seed
 
@@ -60,9 +34,7 @@ Testing
 
 Run unit tests:
 
-bash
-
-php artisan test
+    php artisan test
 
 Usage
 
