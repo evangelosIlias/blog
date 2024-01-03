@@ -1,4 +1,4 @@
-##Blog Test Project
+## Blog Test Project
 
 The Blog Test Project is a Laravel-based web application that enables users to register, log in, create, edit, and delete posts. Users can also comment on posts and manage their own comments. The application includes a search feature for finding content based on titles, posts, or comments.
 Getting Started
