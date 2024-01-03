@@ -6,7 +6,7 @@ Prerequisites
 
 ## Before you get started, make sure you have the following installed:
     
-    Valet (for macOS users)
+  - Valet (for macOS users)
 
 ## Installation
 
@@ -14,7 +14,7 @@ Prerequisites
 
 ## Navigate to the project directory:
 
-    cd blog-test-project
+  - cd blog-test-project
 
 ## Copy the environment file and update the configuration:
 
