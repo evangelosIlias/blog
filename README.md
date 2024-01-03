@@ -19,12 +19,6 @@ Navigate to the project directory
 
   - cd blog-test-project
 
-Copy the environment file and update the configuration:
-
-    cp .env.example .env
-
-Update the .env file with your database credentials.
-
 Run database migrations:
 
     php artisan migrate
@@ -35,12 +29,9 @@ Seed the database with sample data:
 
 Testing
 
-Run unit tests:
-
     php artisan test
 
-
-Example Images
+## Example Images
 
 ![](example-images/image1.png)
 
