@@ -36,28 +36,17 @@ Run unit tests:
 
     php artisan test
 
-Usage
+Accessing the Project:
 
-    Accessing the Project:
-
-    For macOS users with Valet: http://blog.test.
-
-    User Actions:
-        Register and log in to your account.
-        Create, edit, and delete posts.
-        Add and manage comments on posts.
-
-    Search Functionality:
-        Utilize the search box to find posts or comments.
+For macOS users with Valet: http://blog.test.
 
 Example Images
 
-    Image1: Link
-    Image2: Link
-    Image3: Link
-    Image4: Link
-    Image5: Link
-
+![](example-images/image1.png)
+![](example-images/image2.png)
+![](example-images/image3.png)
+![](example-images/image4.png)
+![](example-images/image5.png)
 Customization
 
 Feel free to customize this project to suit your needs.
