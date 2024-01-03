@@ -38,8 +38,8 @@ class PostControllerTest extends TestCase
     public function test_it_can_update_a_post()
     {
         $user = $this->user();
-        $post  = Post::factory(['user_id' => $user->id])->create();
-
+        $post = Post::factory(['user_id' => $user->id])->create();
+        
         $response = $this->actingAs($user)
             ->patch(route('posts.update' , ['post' => $post]), [
                 'title' => 'Updated title',

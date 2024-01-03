@@ -33,15 +33,15 @@ class PostsDeleteInactive extends Command
 
     public function handle()
     {   
-        // Please make sure you have solve the N + 1 problem
+        // Continue processing only the users that meet additional constraints
         User::whereHas('posts', fn($query) => $query
             ->whereDoesntHave('comments')
-            ->where('created_at', '<', now()
-            ->subYear()))
+            ->where('created_at', '<', now()->subYear()))
             ->get()
+            ->load('posts')
             ->each(fn(User $user) => $user
                 ->notify(new OldPostDeletedNotification($this->deleteUserPosts($user))));
 
         $this->info('Inactive posts have been soft deleted.');
-    }  
+    }
 }
