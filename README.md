@@ -43,10 +43,15 @@ For macOS users with Valet: http://blog.test.
 Example Images
 
 ![](example-images/image1.png)
+
 ![](example-images/image2.png)
+
 ![](example-images/image3.png)
+
 ![](example-images/image4.png)
+
 ![](example-images/image5.png)
+
 Customization
 
 Feel free to customize this project to suit your needs.
