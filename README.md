@@ -4,36 +4,36 @@
 The Blog Test Project is a Laravel-based web application designed for users to manage blog posts and comments. The project utilizes the Laravel framework, providing features such as user registration, login, post creation, editing, and deletion. Users can also comment on posts, with the added functionality to edit and delete their own comments. The search box enables users to find content based on titles, posts, or comments.
 Prerequisites
 
-## Before you get started, make sure you have the following installed:
+Before you get started, make sure you have the following installed:
     
   - Valet (for macOS users)
   - For macOS users with Valet:
     
         http://blog.test
 
-## Installation
+Installation
 
     git clone https://github.com/your-username/blog-test-project.git
 
-## Navigate to the project directory:
+Navigate to the project directory
 
   - cd blog-test-project
 
-## Copy the environment file and update the configuration:
+Copy the environment file and update the configuration:
 
     cp .env.example .env
 
 Update the .env file with your database credentials.
 
-## Run database migrations:
+Run database migrations:
 
     php artisan migrate
 
-## Seed the database with sample data:
+Seed the database with sample data:
 
     php artisan migrate --seed
 
-## Testing
+Testing
 
 Run unit tests:
 
